@@ -40,11 +40,12 @@ bars:
       left:
       - home
       - language
-      - notifications
       - cpu
       - memory
+      - active_window
       center:
       - clock
+      - notifications
       right:
       - media
       - systray
@@ -372,3 +373,13 @@ widgets:
         offset_left: 0
         show_layout_icon: true
         layout_icon: "\uf11c"
+  active_window:
+    type: yasb.active_window.ActiveWindowWidget
+    options:
+      label: '{win[title]}'
+      label_alt: '[class_name=''{win[class_name]}'' exe=''{win[process][name]}'' hwnd={win[hwnd]}]'
+      label_icon: true
+      label_icon_size: 16
+      max_length: 12
+      max_length_ellipsis: '...'
+      monitor_exclusive: false
