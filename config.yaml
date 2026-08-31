@@ -39,6 +39,7 @@ bars:
     widgets:
       left:
       - home
+      - language
       - notifications
       - cpu
       - memory
@@ -350,3 +351,24 @@ widgets:
       menu_config:
         blur: true
         alignment: "center"
+  language:
+    type: "yasb.language.LanguageWidget"
+    options:
+      label: "{lang[language_code]}-{lang[layout_country_name]}"
+      label_alt: "{lang[full_name]}"
+      update_interval: 3
+      callbacks:
+        on_left: "toggle_menu"
+        on_middle: "do_nothing"
+        on_right: "toggle_label"
+      language_menu:
+        blur: true
+        round_corners: true
+        round_corners_type: "normal"
+        border_color: "system"
+        alignment: "right"
+        direction: "down"
+        offset_top: 6
+        offset_left: 0
+        show_layout_icon: true
+        layout_icon: "\uf11c"
