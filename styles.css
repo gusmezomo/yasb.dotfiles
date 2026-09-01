@@ -1417,8 +1417,9 @@
 }
 
 .wifi-widget .icon {
-    font-family: "JetBrainsMono Nerd Font Propo";
-    font-size: 12px;
+    font-family: "JetBrainsMono Nerd Font Mono";
+    font-size: 14px;
+    letter-spacing: 1px;
 }
 
 .wifi-icon {
