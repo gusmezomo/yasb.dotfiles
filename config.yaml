@@ -280,8 +280,8 @@ widgets:
       label: "<span>{icon}</span> {percent}%"
       label_alt: "<span>{icon}</span> {percent}% | {power}W | {time_remaining}"
       update_interval: 5000
-      time_remaining_natural: False
-      hide_unsupported: True
+      time_remaining_natural: false
+      hide_unsupported: true
       charging_options:
         icon_format: "{charging_icon}"
         blink_charging_icon: true
@@ -294,11 +294,11 @@ widgets:
         full: 100
       status_icons:
         icon_charging: "\uf0e7"
-        icon_critical: "\uf244"
-        icon_low: "\uf243"
-        icon_medium: "\uf242"
-        icon_high: "\uf241"
-        icon_full: "\uf240"
+        icon_critical: "\uf0e7"
+        icon_low: "\uf0e7"
+        icon_medium: "\uf0e7"
+        icon_high: "\uf0e7"
+        icon_full: "\uf0e7"
   wifi:
     type: "yasb.wifi.WifiWidget"
     options:

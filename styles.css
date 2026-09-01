@@ -1230,8 +1230,8 @@
 }
 .battery-widget .icon {
     font-family: "JetBrainsMono Nerd Font Propo";
-    font-size: 12px;
-    margin-right: 6px;
+    font-size: 14px;
+    margin-right: 4px;
 }
 /* Critical - red */
 .battery-widget .icon.status-critical {
@@ -1247,24 +1247,33 @@
 .battery-widget .label.status-low {
     color: #ffb74d;
 }
-/* Medium - yellow */
+/* Medium - cyan */
 .battery-widget .icon.status-medium {
-    color: #ffc107;
+    color: #4cc2ff;
+}
+.battery-widget .label.status-medium {
+    color: #4cc2ff;
 }
 /* High - light green */
 .battery-widget .icon.status-high {
+    color: #8bc34a;
+}
+.battery-widget .label.status-high {
     color: #8bc34a;
 }
 /* Full - green */
 .battery-widget .icon.status-full {
     color: #4caf50;
 }
-/* Charging - cyan */
+.battery-widget .label.status-full {
+    color: #4caf50;
+}
+/* Charging - purple */
 .battery-widget .icon.status-charging {
-    color: #00bcd4;
+    color: #bf00d4;
 }
 .battery-widget .label.status-charging {
-    color: #4dd0e1;
+    color: #bf00d4;
 }
 
 .wifi-menu {
@@ -1412,17 +1421,24 @@
     font-size: 12px;
 }
 
+.wifi-icon {
+    font-family: 'Segoe Fluent Icons';
+    font-size: 14px;
+    line-height: 1;
+    vertical-align: middle;
+}
+
 .bluetooth-widget .icon.bt-off,
 .bluetooth-widget .label.bt-off {
     color: #888;
 }
 .bluetooth-widget .icon.bt-on,
 .bluetooth-widget .label.bt-on {
-    color: #4cc2ff;
+    color: #deeff8;
 }
 .bluetooth-widget .icon.bt-connected,
 .bluetooth-widget .label.bt-connected {
-    color: #00c800;
+    color: #4cc2ff;
 }
 .bluetooth-menu {
     background: rgba(28, 28, 28, 0.6);
