@@ -1419,7 +1419,7 @@
 .wifi-widget .icon {
     font-family: "JetBrainsMono Nerd Font Mono";
     font-size: 14px;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 }
 
 .wifi-icon {
@@ -1642,4 +1642,60 @@
 .active-window-widget .icon {
     padding-right: 4px;
     padding-bottom: 0;
+}
+
+.brightness-menu {
+    background-color: rgba(36, 36, 36, 0.75);
+    min-width: 300px;
+}
+/* Grouping for monitor rows including title and sliders */
+.brightness-menu .monitor-row {
+    background-color: rgba(139, 69, 19, 0);
+    margin: 12px;
+}
+/* 
+.monitor-0 is indexed as the first monitor row, 
+adjust if you have multiple monitors and want to style them differently correctly.
+*/
+.brightness-menu .monitor-row.monitor-0 {
+    margin-bottom: 0;
+}
+.brightness-menu .monitor-title  {
+    font-size: 13px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-top: 4px;
+}
+.brightness-menu .monitor-subtitle {
+    font-size: 11px;
+    color: #a6adc8;
+    margin-top: 2px;
+    margin-bottom: 8px;
+}
+/* Container for the sliders to create a grouped appearance including icons and sliders */
+.brightness-menu .slider-rows {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    padding: 16px; 
+}
+.brightness-menu .slider-icon {
+    font-family: "Segoe Fluent Icons";
+}
+.brightness-menu .slider-row {
+    margin: 4px 0;
+    padding: 8px 0px;
+}
+/* optional styles for the brightness and contrast sliders */
+.brightness-slider::groove {}
+.contrast-slider::groove {}
+.brightness-slider::handle{} 
+.contrast-slider::handle{}
+
+/* Brightness progress bar styles if enabled */
+.brightness-widget .progress-container {} 
+
+.brightness-widget .icon {
+    font-family: "JetBrainsMono Nerd Font Mono";
+    font-size: 14px;
+    letter-spacing: 4px;
 }

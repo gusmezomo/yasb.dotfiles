@@ -45,6 +45,7 @@ bars:
       - active_window
       center:
       - clock
+      - brightness
       - notifications
       right:
       - media
@@ -383,3 +384,35 @@ widgets:
       max_length: 12
       max_length_ellipsis: '...'
       monitor_exclusive: false
+  brightness:
+    type: "yasb.brightness.BrightnessWidget"
+    options:
+      label: "<span>{icon}</span>"
+      label_alt: "Brightness {percent}%"
+      tooltip: true
+      hide_unsupported: true
+      brightness_toggle_level: [0, 50, 100]
+      auto_light: false
+      auto_light_icon: "\udb80\udce1"
+      auto_light_night_level: 35
+      auto_light_night_start_time: "19:00"
+      auto_light_night_end_time: "06:45"
+      auto_light_day_level: 75
+      brightness_icons: [
+        "\udb86\ude4f",  # Icon for 0-25% brightness
+        "\udb86\ude51",  # Icon for 26-50% brightness
+        "\udb86\ude54",  # Icon for 51-75% brightness
+        "\udb81\udee8"   # Icon for 76-100% brightness
+      ]
+      brightness_menu:
+        blur: true
+        round_corners: true
+        round_corners_type: "normal"
+        border_color: "System"
+        alignment: "right"
+        direction: "down"
+        brightness_icon: "\ue706"
+        contrast_icon: "\ue7a1"
+      callbacks:
+        on_left: "toggle_brightness_menu"
+        on_right: "toggle_label"
