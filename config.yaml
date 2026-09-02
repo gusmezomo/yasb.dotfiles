@@ -115,7 +115,7 @@ widgets:
         round_corners: true
         round_corners_type: normal
         border_color: system
-        alignment: right
+        alignment: center
         direction: down
         show_apps: true
         show_app_labels: false
@@ -291,7 +291,7 @@ widgets:
         round_corners: true
         round_corners_type: "normal"
         border_color: "System"
-        alignment: "right"
+        alignment: "center"
         direction: "down"
         offset_top: 6
         offset_left: 0
@@ -374,7 +374,7 @@ widgets:
         round_corners: true
         round_corners_type: "normal"
         border_color: "System"
-        alignment: "right"
+        alignment: "center"
         direction: "down"
         brightness_icon: "\ue706"
         contrast_icon: "\ue7a1"
