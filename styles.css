@@ -924,14 +924,15 @@
     padding-right: 4px;
 }
 .open-meteo-card {
-    background-color: var(--yasb-popup-bg);
+    background-color: var(--yasb-bar-bg);
+    border: 1px solid var(--yasb-white-alpha-07);
     min-width: 500px;
 }
 .open-meteo-card-today .label {
     font-size: 13px;
     font-family: var(--system-font);
     font-weight: 400;
-    color: var(--yasb-fg-muted);
+    color: var(--yasb-fg);
 }
 .open-meteo-card-today .label.location {
     font-size: 32px;
@@ -960,7 +961,7 @@
 }
 .open-meteo-card-day .day-name {
     font-family: var(--system-font);
-    color: var(--yasb-fg-muted);
+    color: var(--yasb-fg);
     font-size: 12px;
     font-weight: 600;
 }

@@ -165,7 +165,7 @@ widgets:
       label: "<span>\uE706</span>{temp}"
       label_alt: '{location}: Min {min_temp}, Max {max_temp}, Humidity {humidity}'
       tooltip: true
-      update_interval: 600
+      update_interval: 1000
       hide_decimal: true
       units: metric
       callbacks:
@@ -177,7 +177,7 @@ widgets:
         clearNight: "\uEC46"
       weather_card:
         blur: true
-        alignment: right
+        alignment: center
         direction: down
         icon_size: 32
         show_hourly_forecast: true
