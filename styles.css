@@ -165,7 +165,7 @@
     background-color: var(--yasb-white-alpha-08);
 }
 .home-menu {
-    background-color: var(--yasb-popup-bg);
+    background-color: var(--yasb-bar-bg);;
 }
 .home-menu .menu-item {
     color: var(--yasb-fg);
@@ -755,7 +755,7 @@
     background-color: var(--yasb-white-alpha-10);
 }
 .systray-popup {
-    background-color: var(--yasb-popup-bg);
+    background-color: var(--yasb-bar-bg);;
     padding: 4px;
 }
 .systray-popup .button {
@@ -1144,7 +1144,7 @@
 
 .wifi-menu {
     font-family: 'Segoe UI';
-    background-color: rgba(17, 17, 27, 0.4);
+    background-color: var(--yasb-bar-bg);
     max-height: 350px;
     min-height: 375px;
     min-width: 375px;
@@ -1161,7 +1161,7 @@
     font-weight: 600;
     margin-bottom: 2px;
     padding: 12px;
-    background-color: rgba(17, 17, 27, 0.6);
+    background-color: rgba(0, 0, 0, 0.2);
     color: white;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -1172,13 +1172,13 @@
     font-weight: 600;
     margin-bottom: 2px;
     padding: 12px;
-    background-color: red;
+    background-color: rgba(255, 0, 0, 0.2);
     color: white;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .wifi-menu .wifi-list {
-    background-color: rgba(17, 17, 27, 0.8);
+    background-color: transparent;
     margin-right: 3px;
 }
 
@@ -1254,7 +1254,7 @@
     padding: 12px;
     margin-top: 2px;
     color: #9399b2;
-    background-color: rgba(17, 17, 27, 0.6);
+    background-color: rgba(0, 0, 0, 0.2);
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -1308,7 +1308,7 @@
     color: #4cc2ff;
 }
 .bluetooth-menu {
-    background: rgba(28, 28, 28, 0.6);
+    background-color: var(--yasb-bar-bg);
     min-width: 360px;
     min-height: 480px;
 }
@@ -1441,7 +1441,7 @@
 }
 
 .language-menu {
-    background-color: rgba(17, 17, 27, 0.4);
+    background-color: transparent;
     min-width: 300px;
 }
 .language-menu .header {
@@ -1450,7 +1450,7 @@
     font-weight: 600;
     margin-bottom: 2px;
     padding: 12px;
-    background-color: rgba(17, 17, 27, 0.6);
+    background-color: rgba(0, 0, 0, 0.2);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 .language-menu .footer {
@@ -1459,12 +1459,12 @@
     font-weight: 600;
     padding: 12px;
     margin-top: 2px;
-    color: #9399b2;
-    background-color: rgba(17, 17, 27, 0.6);
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.2);
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 .language-menu .footer:hover {
-    background-color: rgba(36, 36, 51, 0.6);
+    background-color: rgba(52, 52, 53, 0.6);
     color: #fff;
 }
 .language-menu .language-item {
