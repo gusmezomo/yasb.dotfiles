@@ -481,7 +481,7 @@
     background-color: var(--yasb-white-alpha-08);
 }
 .audio-menu {
-    background-color: var(--yasb-popup-bg);
+    background-color: var(--yasb-bar-bg);
     min-width: 300px;
 }
 .audio-menu .system-volume-container .volume-slider {
@@ -492,7 +492,7 @@
     border: none;
     padding: 6px 8px 6px 4px;
     margin: 2px 0;
-    font-size: 12px;
+    font-size: 13px;
     border-radius: 4px;
 }
 .audio-menu .audio-container .device.selected {
@@ -534,156 +534,8 @@
 .audio-menu .apps-container .app-volume .app-icon-container:hover {
     background-color: var(--yasb-white-alpha-10);
 }
-/* CPU */
-.cpu-widget:hover {
-    background-color: var(--yasb-white-alpha-08);
-}
-.cpu-widget .icon {
-    padding-right: 4px;
-}
-.cpu-popup {
-    background-color: var(--yasb-popup-bg);
-    min-width: 400px;
-    max-width: 400px;
-}
-.cpu-popup .header {
-    background: transparent;
-    padding: 12px 16px;
-}
-.cpu-popup .header .text {
-    font-size: 16px;
-    font-family: var(--system-font);
-}
-.cpu-popup .header .pin-btn {
-    font-size: 14px;
-    background: transparent;
-    font-family: 'Segoe Fluent Icons';
-    border: none;
-    padding: 6px;
-    color: var(--yasb-fg-muted);
-}
-.cpu-popup .header .pin-btn:hover {
-    color: var(--yasb-fg-muted);
-}
-.cpu-popup .header .pin-btn.pinned {
-    color: var(--yasb-fg-muted);
-}
-.cpu-popup .graph-container {
-    background: transparent;
-    min-height: 64px;
-}
-.cpu-popup .cpu-graph {
-    color: #0f6bff;
-}
-.cpu-popup .cpu-graph-grid {
-    color: var(--yasb-white-alpha-05);
-}
-.cpu-popup .graph-title {
-    font-size: 12px;
-    color: var(--yasb-fg-muted);
-    font-family: var(--system-font);
-    padding: 0px 0px 4px 14px;
-}
-.cpu-popup .stats {
-    background: transparent;
-    padding: 16px;
-}
-.cpu-popup .stats .stat-item {
-    background-color: var(--yasb-white-alpha-03);
-    border: 1px solid var(--yasb-white-alpha-04);
-    border-radius: 8px;
-    padding: 8px 12px;
-    margin: 8px;
-}
-.cpu-popup .stats .stat-label {
-    font-size: 13px;
-    color: var(--yasb-fg-muted);
-    font-family: var(--system-font);
-    font-weight: 400;
-    padding: 6px 4px 2px 4px;
-}
-.cpu-popup .stats .stat-value {
-    font-size: 20px;
-    font-weight: 700;
-    color: var(--yasb-fg);
-    font-family: var(--system-font);
-    padding: 0 4px 12px 4px;
-}
-/* Memory */
-.memory-widget:hover {
-    background-color: var(--yasb-white-alpha-08);
-}
-.memory-widget .icon {
-    padding-right: 4px;
-}
-.memory-popup {
-    background-color: var(--yasb-popup-bg);
-    min-width: 400px;
-    max-width: 400px;
-}
-.memory-popup .header {
-    background: transparent;
-    padding: 12px 16px;
-}
-.memory-popup .header .text {
-    font-size: 16px;
-    font-family: var(--system-font);
-}
-.memory-popup .header .pin-btn {
-    font-size: 14px;
-    background: transparent;
-    font-family: 'Segoe Fluent Icons';
-    border: none;
-    padding: 6px;
-    color: var(--yasb-fg-muted);
-}
-.memory-popup .header .pin-btn:hover {
-    color: var(--yasb-fg-muted);
-}
-.memory-popup .header .pin-btn.pinned {
-    color: var(--yasb-fg-muted);
-}
-.memory-popup .graph-container {
-    background: transparent;
-    min-height: 64px;
-}
-.memory-popup .memory-graph {
-    color: #0f6bff;
-}
-.memory-popup .memory-graph-grid {
-    color: var(--yasb-white-alpha-05);
-}
-.memory-popup .graph-title {
-    font-size: 12px;
-    color: var(--yasb-fg-muted);
-    font-family: var(--system-font);
-    padding: 0px 0px 4px 14px;
-}
-.memory-popup .stats {
-    background: transparent;
-    padding: 16px;
-}
-.memory-popup .stats .stat-item {
-    background-color: var(--yasb-white-alpha-03);
-    border: 1px solid var(--yasb-white-alpha-04);
-    border-radius: 8px;
-    padding: 8px 12px;
-    margin: 8px;
-}
-.memory-popup .stats .stat-label {
-    font-size: 13px;
-    color: var(--yasb-fg-muted);
-    font-family: var(--system-font);
-    font-weight: 400;
-    padding: 6px 4px 2px 4px;
-}
-.memory-popup .stats .stat-value {
-    font-size: 20px;
-    font-weight: 700;
-    color: var(--yasb-fg);
-    font-family: var(--system-font);
-    padding: 0 4px 12px 4px;
-}
+
+
 /* Quick Launch */
 .quick-launch-widget:hover {
     background-color: var(--yasb-white-alpha-08);
@@ -1102,7 +954,7 @@
 }
 .media-widget .btn.disabled:hover,
 .media-widget .btn.disabled {
-    color: #4e525c;
+    color: #757b8b;
     font-size: 12px;
     background-color: rgba(0, 0, 0, 0);
 }
@@ -1659,7 +1511,7 @@
 }
 
 .brightness-menu {
-    background-color: rgba(36, 36, 36, 0.75);
+    background-color: var(--yasb-bar-bg);
     min-width: 300px;
 }
 /* Grouping for monitor rows including title and sliders */
@@ -1682,7 +1534,7 @@ adjust if you have multiple monitors and want to style them differently correctl
 }
 .brightness-menu .monitor-subtitle {
     font-size: 11px;
-    color: #a6adc8;
+    color: #ffffff;
     margin-top: 2px;
     margin-bottom: 8px;
 }
