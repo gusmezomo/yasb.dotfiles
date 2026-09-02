@@ -39,22 +39,21 @@ bars:
     widgets:
       left:
       - home
+      - wallpapers
       - language
-      - cpu
-      - memory
       - active_window
       center:
-      - clock
       - brightness
-      - notifications
+      - clock
+      - open_meteo
       right:
       - media
       - systray
-      - open_meteo
       - volume
       - bluetooth
       - wifi
       - battery
+      - notifications
 widgets:
   home:
     type: yasb.home.HomeWidget
@@ -136,40 +135,6 @@ widgets:
         on_left: toggle_notification
         on_right: do_nothing
         on_middle: do_nothing
-  cpu:
-    type: yasb.cpu.CpuWidget
-    options:
-      label: "<span>\uEEA1</span> {info[percent][total]}%"
-      label_alt: '{info[freq][current]} MHz'
-      update_interval: 2000
-      hide_decimal: true
-      menu:
-        enabled: true
-        show_graph: true
-        show_graph_grid: true
-        graph_history_size: 60
-        alignment: center
-      callbacks:
-        on_left: toggle_menu
-        on_middle: do_nothing
-        on_right: toggle_label
-  memory:
-    type: yasb.memory.MemoryWidget
-    options:
-      label: "<span>\uE9D9</span> {virtual_mem_free}"
-      label_alt: "<span>\uEFC5</span> VIRT: {virtual_mem_percent}% SWAP: {swap_mem_percent}%"
-      update_interval: 5000
-      hide_decimal: true
-      callbacks:
-        on_left: toggle_menu
-        on_middle: do_nothing
-        on_right: toggle_label
-      menu:
-        enabled: true
-        show_graph: true
-        show_graph_grid: true
-        graph_history_size: 60
-        alignment: center
   systray:
     type: yasb.systray.SystrayWidget
     options:
@@ -416,3 +381,24 @@ widgets:
       callbacks:
         on_left: "toggle_brightness_menu"
         on_right: "toggle_label"
+  wallpapers:
+    type: "yasb.wallpapers.WallpapersWidget"
+    options:
+      label: "<span>\udb83\ude09</span>"
+      # Example path to folder with images. Can be a single string or a list of strings.
+      image_path: "C:\\Users\\gusme\\Desktop\\coisas\\imgs-wallpaper-icons\\AutoHotKey-Wallpapers" 
+      keybindings:
+        - keys: "win+ctrl+alt+k"
+          action: "toggle_gallery"
+      gallery:
+        enabled: true
+        blur: true
+        image_width: 220
+        image_per_page: 3
+        orientation: "portrait"
+        show_buttons: false
+        image_spacing: 8
+        lazy_load: true
+        lazy_load_fadein: 400
+        image_corner_radius: 12
+
