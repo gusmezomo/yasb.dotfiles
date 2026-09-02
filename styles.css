@@ -188,29 +188,38 @@
     padding-left: 4px;
 }
 .clock-popup.alarm,
-.clock-popup.timer,
-.clock-popup.calendar {
+.clock-popup.timer {
     min-width: 460px;
     background-color: var(--yasb-popup-bg);
 }
+.clock-popup.calendar {
+    min-width: 460px;
+    background-color: var(--yasb-bar-bg);
+    border: 1px solid var(--yasb-white-alpha-07);
+}
 .clock-popup.calendar .calendar-table,
 .clock-popup.calendar .calendar-table::item {
-    background-color: rgba(17, 17, 27, 0);
-    color: rgba(162, 177, 196, 0.85);
+    background-color: transparent;
+    color: var(--yasb-fg);
     font-family: var(--system-font);
     margin: 0;
     padding: 0;
     border: none;
     outline: none;
 }
+.clock-popup.calendar .calendar-table::item:hover {
+    background-color: var(--yasb-white-alpha-08);
+    border-radius: 12px;
+}
 .clock-popup.calendar .calendar-table::item:selected {
-    color: #000000;
+    color: var(--yasb-accent-fg);
     font-weight: bold;
     background-color: var(--yasb-accent);
     border-radius: 12px;
 }
 .clock-popup.calendar .day-label {
     margin-top: 20px;
+    color: var(--yasb-fg);
 }
 .clock-popup.calendar .day-label,
 .clock-popup.calendar .month-label,
@@ -219,19 +228,23 @@
     font-family: var(--system-font);
     font-size: 16px;
     font-weight: 700;
+    color: var(--yasb-fg);
     min-width: 180px;
     max-width: 180px;
 }
 .clock-popup.calendar .month-label {
     font-weight: normal;
+    color: var(--yasb-fg);
 }
 .clock-popup.calendar .year-label {
     font-weight: normal;
+    color: var(--yasb-fg);
 }
 .clock-popup.calendar .date-label {
     font-size: 88px;
     font-weight: 900;
     margin-top: -20px;
+    color: var(--yasb-fg);
 }
 .clock-popup.timer .clock-popup-container,
 .clock-popup.alarm .clock-popup-container {
